@@ -1,0 +1,92 @@
+body { 
+    background-color: #F2F6D0;
+    margin: 5px;
+}
+
+.my-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 5px 3px;
+    cursor: pointer;
+    float: right;  
+    margin-right: 1px;
+}
+
+#scrape-bttn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 3px;
+    cursor: pointer; 
+}
+
+#wrapper {
+    display: inline-flex;    
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#articles {
+    flex-basis: 70%;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+.article {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.article-title {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(63,121,178);
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.article-link {
+    background-color: white;  
+    color: gray;
+    width: 100%;
+    height: 50px;  
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+#notes {
+    flex-basis: 30%;
+}
+
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: #FCF5C7;
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
