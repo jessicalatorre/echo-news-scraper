@@ -27,7 +27,8 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 // Use express.static to serve the public folder as a static directory
 app.use(express.static("public",{ index : false }));
-
+ 
+//NOTE: Added this after creating a mongo Lab account
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/echonews";
 // Connect to the Mongo DB
 mongoose.Promise = Promise;

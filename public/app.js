@@ -28,9 +28,15 @@ $('#scrape-bttn').on("click", function() {
         titleDiv.attr('class', 'article-title');
         titleDiv.text(data[i].title);
 
+        // var linkDiv = $('<div>');
+        // linkDiv.attr('class', 'article-link');
+        // linkDiv.text(data[i].link);
+
         var linkDiv = $('<div>');
         linkDiv.attr('class', 'article-link');
-        linkDiv.text(data[i].link);
+        newLink = $("<a>").attr("href",data[i].link);
+        newLink.text(data[i].link);
+        linkDiv.append(newLink);
 
         articleDiv.append(titleDiv);
         articleDiv.append(linkDiv);
